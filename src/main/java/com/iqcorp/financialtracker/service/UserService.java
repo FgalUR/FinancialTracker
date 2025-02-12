@@ -33,7 +33,7 @@ public class UserService {
             throw new RuntimeException("User not found");
         }
         return userRepository.save(user);
-    }     
+    }
 
     public void deleteUser(int id) {
         userRepository.deleteById(id);
