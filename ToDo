@@ -1,0 +1,10 @@
+1.User(id, username,email,password,
+2.Account(id, name, balance, user
+3.Category(id, name, isIncome,
+4.Transaction(id, amount,date, account, category
+5.SavingGoals(id, name,targetAmount, currentAmount, deadline, user
+6.Budget(id, limitAmount, startDate, endDate, category,user
+7.Beans
+8.DataBase
+9.Controller
+10.Service
