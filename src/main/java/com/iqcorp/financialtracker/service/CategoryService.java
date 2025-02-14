@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class CategoryService {
-    private final CategoryRepository categoryRepository;
+    final CategoryRepository categoryRepository;
 
     @Autowired
     public CategoryService(CategoryRepository categoryRepository) {
@@ -24,8 +24,8 @@ public class CategoryService {
         return categoryRepository.findById(id).orElseThrow(() -> new RuntimeException("Category not found"));
     }
 
-    public Category createBudget(Category category) {
-        return categoryRepository.save(category);
+    public void createCategory(Category category) {
+        categoryRepository.save(category);
     }
 
     public Category updateCategory(Category category) {
