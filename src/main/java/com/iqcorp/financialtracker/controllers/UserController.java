@@ -3,7 +3,6 @@ package com.iqcorp.financialtracker.controllers;
 import com.iqcorp.financialtracker.models.User;
 import com.iqcorp.financialtracker.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +11,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class UserController {
     final UserService userService;
+
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
